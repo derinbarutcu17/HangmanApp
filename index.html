@@ -5,9 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>hangman_app</title>
+    <style>
+      html, body { margin: 0; min-height: 100%; background: #f2f2f7; color: #1c1c1e; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+      #root { min-height: 100vh; }
+      .page-fallback { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center; }
+      .page-fallback h1 { font-size: 28px; margin-bottom: 8px; }
+      .page-fallback p { opacity: 0.7; max-width: 28rem; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><main class="page-fallback"><div><h1>Loading Hangman…</h1><p>If this stays here, the app script failed to load.</p></div></main></div>
     <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
